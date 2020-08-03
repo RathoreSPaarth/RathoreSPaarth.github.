@@ -1,0 +1,165 @@
+#grid-wrapper {
+  display: grid;
+  grid-template-areas: "header header";
+  grid-template-columns: 75%;
+  justify-content: center;
+
+}
+#about {
+  display: grid;
+  grid-template-columns: 75%;
+  justify-content: center;
+}
+#projects-wrapper {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content:space-evenly;
+}
+#contact-me {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  justify-content:space-evenly;
+}
+
+#header {
+  grid-area: header;
+  background-color: #1b6ca8;
+  animation: headText;
+  animation-duration: 1s;
+  position: relative;
+}
+body {
+  background-color: #e4e3e3;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.btn{
+    border: none;
+    border-radius: 10px;
+    background-color: #2ea44f;
+    color: white;
+    height: 4vw;
+    width: 6vw;
+    font-family:  "Roboto", sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+@keyframes headText {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  text-align: center;
+}
+#education-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+#tech-skills {
+  display: grid;
+  grid-template-columns: 75%;
+  justify-content: center;
+}
+#lk{
+    grid-column: 1 / -1;
+}
+#languages-known {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-cards{
+  box-shadow: 0 4px 8px 0 #84a9ac, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.language-img{
+   height: 5vw; width: 5vw;
+}
+
+.project-description{
+  font-size:1.5vw; padding: 2%; text-align: center;
+}
+
+.project-title{
+  text-align: center; font-size: 2.5vw;
+}
+
+.logo{
+  height: 5vw; width: 5vw;
+}
+#logo-wrapper{
+    display: grid;
+    grid-template-columns: 13% 13% 13% 13% 13% 13% 13% 13% ;
+
+}
+/* media queries */
+
+@media (max-width: 550px){
+  #grid-wrapper {
+  grid-template-columns: 1fr;
+
+}
+#about {
+  grid-template-columns: 1fr;
+}
+
+#languages-known {
+  grid-template-columns: 1fr;
+}
+.language-img{
+    height: 100px;
+    width: auto;
+}
+#tech-skills {
+  grid-template-columns: 1fr;
+}
+
+#projects-wrapper {
+  grid-template-columns: 90%;
+  justify-content:space-evenly;
+}
+
+.project-description{
+  font-size:20px; padding: 2%; text-align: center;
+}
+
+.project-title{
+  text-align: center; font-size: 20px;
+}
+
+.logo{
+  height: 50px; width: auto;
+}
+#logo-wrapper{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+}
+
+.find-me-logo{
+  height: 50px;
+  width: auto;
+}
+.btn{
+    border: none;
+    border-radius: 5px;
+    background-color: #2ea44f;
+    color: white;
+    height: 50px;
+    width: 100px;
+    font-family:  "Roboto", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+}
