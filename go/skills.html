@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/skills.css">
+</head>
+<script defer src="./js/skills.js">
+</script>
+<script defer src="./js/index.js"></script>
+
+
+<body>
+
+   <div class="btn-art" onclick="openNav()">
+    <img src="https://img.icons8.com/nolan/64/menu.png"/>
+   </div>
+   <div id="mySidenav" class="sidenav">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Resume</a>
+    <a href="index.html">Skills</a>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <!-- <span onclick="openNav()">open</span> -->
+  <div id="main">
+    <div id="center-div">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Languages Known</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Tech I Use</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="London" class="tabcontent">
+            <h3>Languages Known</h3>
+            <img
+            class="language-img"
+            src="https://img.icons8.com/color/100/000000/c-plus-plus-logo.png"
+          />
+          <img
+            class="language-img"
+            src="https://img.icons8.com/color/100/000000/javascript.png"
+          />
+          <img
+            class="language-img"
+            src="https://img.icons8.com/color/100/000000/python.png"
+          />
+          <img
+            class="language-img"
+            src="https://img.icons8.com/color/100/000000/java-coffee-cup-logo.png"
+          />
+          <div id="hackerrank">
+            <a href="https://www.hackerrank.com/RA1711003010304">
+                <figure>
+                    <img
+                style="width: 100%; height: 100%;"
+                src="./images/languages.png"
+            />
+            <figcaption>Click on the image to visit Hackerrank profile</figcaption>
+                </figure>
+              </a>
+          </div>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <div id="logo-wrapper">
+                <h2 id="tech-i-use" >Tech I use:</h2>
+                <img class="logo" src="https://img.icons8.com/color/100/000000/html-5.png" />
+                <img class="logo"src="https://img.icons8.com/color/100/000000/css3.png"  />
+                <img class="logo" src="https://img.icons8.com/color/100/000000/javascript.png" />
+                <img class="logo" src="https://img.icons8.com/color/100/000000/nodejs.png" />
+                <img class="logo"
+                  src="https://img.icons8.com/color/100/000000/postgreesql.png" 
+                />
+                <img class="logo" src="https://img.icons8.com/officel/100/000000/react.png" />
+                <img class="logo" src="https://img.icons8.com/color/100/000000/bootstrap.png" />
+              </div>
+          </div>
+    </div>
+  </div>
+    
+
+
+</body>
+
+</html>
