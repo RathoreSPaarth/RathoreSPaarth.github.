@@ -1,0 +1,103 @@
+body {
+    background-image: linear-gradient(to right, #1e5799, #c2d0dd);
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    border-radius: 100px;
+}
+
+#profile-img {
+    display: flex;
+    justify-content: center;
+}
+
+#profile-img:hover {
+    animation-name: profile-animation;
+    animation-direction: alternate;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+#center-div {
+
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    background-color: #d6dfe6;
+    filter: drop-shadow(5px 5px 5px #888888);
+    text-align: center;
+    /* min-height: 540px; */
+}
+
+.find-me-logo {
+    margin-right: 100px;
+}
+
+@keyframes profile-animation {
+    from {
+        filter: drop-shadow(0 0 0.75rem #d6dfe6);
+    }
+
+    to {
+        filter: drop-shadow(10px 10px 10px #888888);
+    }
+}
+
+.btn-art {
+    background-color:rgba(red, green, blue, 0);
+    border: none;
+    border-radius: 10px;
+    width: 90px;
+    cursor: pointer;
+    margin: 10px;
+
+}
+.sidenav {
+height: 100%; 
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+left: 0;
+background-image: linear-gradient(to right, #1e5799,#23282c); 
+overflow-x: hidden; 
+padding-top: 60px; 
+transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#main {
+transition: margin-left .5s;
+padding: 20px;
+margin-top: -5%;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
